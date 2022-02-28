@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Información</title>
+</head>
+
+<body>
+    <a href="pages/comentarios.html" class="comments__button">Opiniones de usuarios</a>
+
+    <div class="main_map">
+        <button class="map_point toPlay" id="stage-1">1er Desafío</button>
+        <button class="map_point" id="stage-2">2do Desafío</button>
+        <button class="map_point" id="stage-3">3er Desafío</button>
+        <button class="map_point" id="stage-4">4to Desafío</button>
+        <button class="map_point" id="stage-5">5to Desafío</button>
+        <button class="map_point" id="stage-6">6to Desafío</button>
+        <button class="map_point" id="stage-7">7mo Desafío</button>
+    </div>
+
+    <!-------------------INFO SECTION START------------------->
+    <section class="infoSection hide" id="info">
+        <aside>
+            <h2>
+                Información sobre:
+            </h2>
+            <div class="navigation">
+                <ul>
+                    <!-------------------LI START------------------->
+                    <li class="navigation__item navigation__item--active" tabindex="0">
+                        <b></b>
+                        <b></b>
+                        <a href="#">
+                            <span class="navigation__item--title">Tema del que trata el primer desafío</span>
+                        </a>
+                        <div class="navigation__item__content">
+                            <span class="navigation__item__content--title">Título primario del item</span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate libero architecto
+                                esse nulla, asperiores deserunt ex veniam nobis eaque, nemo corporis sunt obcaecati aut
+                                dolorem quo ab at ad provident. Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Ut voluptatum aliquam iure incidunt veniam et eos culpa odio repellendus nulla
+                                dolores corrupti in tenetur, ipsum temporibus officia impedit, sit amet! Lorem ipsum,
+                                dolor sit amet consectetur adipisicing elit. Porro nesciunt eligendi iusto
+                                necessitatibus quae exercitationem
+                            </p>
+
+                            <span class="navigation__item__content--title">Título secundario del item</span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate libero architecto
+                                esse nulla, asperiores deserunt ex veniam nobis eaque, nemo corporis sunt obcaecati aut
+                                dolorem quo ab at ad provident. Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Ut voluptatum aliquam iure incidunt veniam et eos culpa odio repellendus nulla
+                                dolores corrupti in tenetur, ipsum temporibus officia impedit, sit amet! Lorem ipsum,
+                                dolor sit amet consectetur adipisicing elit. Porro nesciunt eligendi iusto
+                                necessitatibus quae exercitationem
+                            </p>
+
+                            <span class="navigation__item__content--title">Título terciario del item</span>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, esse maiores non,
+                                facilis aliquam ratione alias cupiditate qui ea voluptatibus quisquam eveniet sunt
+                                exercitationem dolores!
+                            </p>
+
+                            <!--Este es un carrucel que utiliza Bootstrap 5-->
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/images/slider-image-1.jpg" class="d-block w-100"
+                                            alt="Estruxtura de un drop de fibra con buffers y pelos">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/slider-image-2.jfif" class="d-block w-100"
+                                            alt="Representación de la fabricación de una fibra mediante extrusión">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/slider-image-3.jfif" class="d-block w-100"
+                                            alt="Transmisión de la luz por una fibra">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <a href="pages/quiz.html"><button class="quiz-button">Al cuestionario!</button></a>
+                    </li>
+                    <!-------------------LI END------------------->
+
+                    <!-------------------LI START------------------->
+                    <li class="navigation__item" tabindex="0">
+                        <b></b>
+                        <b></b>
+                        <a href="#">
+                            <span class="navigation__item--title">Tema del que trata el segundo desafío</span>
+                        </a>
+                        <div class="navigation__item__content">
+                            <span class="navigation__item__content--title">Título primario del item</span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate libero architecto
+                                esse nulla, asperiores deserunt ex veniam nobis eaque, nemo corporis sunt obcaecati aut
+                                dolorem quo ab at ad provident. Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Ut voluptatum aliquam iure incidunt veniam et eos culpa odio repellendus nulla
+                                dolores corrupti in tenetur, ipsum temporibus officia impedit, sit amet! Lorem ipsum,
+                                dolor sit amet consectetur adipisicing elit. Porro nesciunt eligendi iusto
+                                necessitatibus quae exercitationem
+                            </p>
+
+                            <span class="navigation__item__content--title">Título secundario del item</span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate libero architecto
+                                esse nulla, asperiores deserunt ex veniam nobis eaque, nemo corporis sunt obcaecati aut
+                                dolorem quo ab at ad provident. Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Ut voluptatum aliquam iure incidunt veniam et eos culpa odio repellendus nulla
+                                dolores corrupti in tenetur, ipsum temporibus officia impedit, sit amet! Lorem ipsum,
+                                dolor sit amet consectetur adipisicing elit. Porro nesciunt eligendi iusto
+                                necessitatibus quae exercitationem
+                            </p>
+
+                            <span class="navigation__item__content--title">Título terciario del item</span>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, esse maiores non,
+                                facilis aliquam ratione alias cupiditate qui ea voluptatibus quisquam eveniet sunt
+                                exercitationem dolores!
+                            </p>
+
+                            <!--Este es un carrucel que utiliza Bootstrap 5-->
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/images/slider-image-1.jpg" class="d-block w-100"
+                                            alt="Estruxtura de un drop de fibra con buffers y pelos">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/slider-image-2.jfif" class="d-block w-100"
+                                            alt="Representación de la fabricación de una fibra mediante extrusión">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/slider-image-3.jfif" class="d-block w-100"
+                                            alt="Transmisión de la luz por una fibra">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <a href="pages/quiz.html"><button class="quiz-button">Al cuestionario!</button></a>
+                    </li>
+                    <!-------------------LI END------------------->
+
+                    <!-------------------LI START------------------->
+                    <li class="navigation__item" tabindex="0">
+                        <b></b>
+                        <b></b>
+                        <a href="#">
+                            <span class="navigation__item--title">Tema del que trata el tercer desafío</span>
+                        </a>
+                        <div class="navigation__item__content">
+                            <span class="navigation__item__content--title">Título primario del item</span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate libero architecto
+                                esse nulla, asperiores deserunt ex veniam nobis eaque, nemo corporis sunt obcaecati aut
+                                dolorem quo ab at ad provident. Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Ut voluptatum aliquam iure incidunt veniam et eos culpa odio repellendus nulla
+                                dolores corrupti in tenetur, ipsum temporibus officia impedit, sit amet! Lorem ipsum,
+                                dolor sit amet consectetur adipisicing elit. Porro nesciunt eligendi iusto
+                                necessitatibus quae exercitationem
+                            </p>
+
+                            <span class="navigation__item__content--title">Título secundario del item</span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate libero architecto
+                                esse nulla, asperiores deserunt ex veniam nobis eaque, nemo corporis sunt obcaecati aut
+                                dolorem quo ab at ad provident. Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Ut voluptatum aliquam iure incidunt veniam et eos culpa odio repellendus nulla
+                                dolores corrupti in tenetur, ipsum temporibus officia impedit, sit amet! Lorem ipsum,
+                                dolor sit amet consectetur adipisicing elit. Porro nesciunt eligendi iusto
+                                necessitatibus quae exercitationem
+                            </p>
+
+                            <span class="navigation__item__content--title">Título terciario del item</span>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, esse maiores non,
+                                facilis aliquam ratione alias cupiditate qui ea voluptatibus quisquam eveniet sunt
+                                exercitationem dolores!
+                            </p>
+
+                            <!--Este es un carrucel que utiliza Bootstrap 5-->
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/images/slider-image-1.jpg" class="d-block w-100"
+                                            alt="Estruxtura de un drop de fibra con buffers y pelos">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/slider-image-2.jfif" class="d-block w-100"
+                                            alt="Representación de la fabricación de una fibra mediante extrusión">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/slider-image-3.jfif" class="d-block w-100"
+                                            alt="Transmisión de la luz por una fibra">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <a href="pages/quiz.html"><button class="quiz-button">Al cuestionario!</button></a>
+                    </li>
+                    <!-------------------LI END------------------->
+
+                    <!-------------------LI START------------------->
+                    <li class="navigation__item" tabindex="0">
+                        <b></b>
+                        <b></b>
+                        <a href="#">
+                            <span class="navigation__item--title">Tema del que trata el cuarto desafío</span>
+                        </a>
+                        <div class="navigation__item__content">
+                            <span class="navigation__item__content--title">Título primario del item</span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate libero architecto
+                                esse nulla, asperiores deserunt ex veniam nobis eaque, nemo corporis sunt obcaecati aut
+                                dolorem quo ab at ad provident. Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Ut voluptatum aliquam iure incidunt veniam et eos culpa odio repellendus nulla
+                                dolores corrupti in tenetur, ipsum temporibus officia impedit, sit amet! Lorem ipsum,
+                                dolor sit amet consectetur adipisicing elit. Porro nesciunt eligendi iusto
+                                necessitatibus quae exercitationem
+                            </p>
+
+                            <span class="navigation__item__content--title">Título secundario del item</span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate libero architecto
+                                esse nulla, asperiores deserunt ex veniam nobis eaque, nemo corporis sunt obcaecati aut
+                                dolorem quo ab at ad provident. Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Ut voluptatum aliquam iure incidunt veniam et eos culpa odio repellendus nulla
+                                dolores corrupti in tenetur, ipsum temporibus officia impedit, sit amet! Lorem ipsum,
+                                dolor sit amet consectetur adipisicing elit. Porro nesciunt eligendi iusto
+                                necessitatibus quae exercitationem
+                            </p>
+
+                            <span class="navigation__item__content--title">Título terciario del item</span>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, esse maiores non,
+                                facilis aliquam ratione alias cupiditate qui ea voluptatibus quisquam eveniet sunt
+                                exercitationem dolores!
+                            </p>
+
+                            <!--Este es un carrucel que utiliza Bootstrap 5-->
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/images/slider-image-1.jpg" class="d-block w-100"
+                                            alt="Estruxtura de un drop de fibra con buffers y pelos">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/slider-image-2.jfif" class="d-block w-100"
+                                            alt="Representación de la fabricación de una fibra mediante extrusión">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/slider-image-3.jfif" class="d-block w-100"
+                                            alt="Transmisión de la luz por una fibra">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <a href="pages/quiz.html"><button class="quiz-button">Al cuestionario!</button></a>
+                    </li>
+                    <!-------------------LI END------------------->
+
+                    <!-------------------LI START------------------->
+                    <li class="navigation__item" tabindex="0">
+                        <b></b>
+                        <b></b>
+                        <a href="#">
+                            <span class="navigation__item--title">Tema del que trata el quinto desafío</span>
+                        </a>
+                        <div class="navigation__item__content">
+                            <span class="navigation__item__content--title">Título primario del item</span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate libero architecto
+                                esse nulla, asperiores deserunt ex veniam nobis eaque, nemo corporis sunt obcaecati aut
+                                dolorem quo ab at ad provident. Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Ut voluptatum aliquam iure incidunt veniam et eos culpa odio repellendus nulla
+                                dolores corrupti in tenetur, ipsum temporibus officia impedit, sit amet! Lorem ipsum,
+                                dolor sit amet consectetur adipisicing elit. Porro nesciunt eligendi iusto
+                                necessitatibus quae exercitationem
+                            </p>
+
+                            <span class="navigation__item__content--title">Título secundario del item</span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate libero architecto
+                                esse nulla, asperiores deserunt ex veniam nobis eaque, nemo corporis sunt obcaecati aut
+                                dolorem quo ab at ad provident. Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Ut voluptatum aliquam iure incidunt veniam et eos culpa odio repellendus nulla
+                                dolores corrupti in tenetur, ipsum temporibus officia impedit, sit amet! Lorem ipsum,
+                                dolor sit amet consectetur adipisicing elit. Porro nesciunt eligendi iusto
+                                necessitatibus quae exercitationem
+                            </p>
+
+                            <span class="navigation__item__content--title">Título terciario del item</span>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, esse maiores non,
+                                facilis aliquam ratione alias cupiditate qui ea voluptatibus quisquam eveniet sunt
+                                exercitationem dolores!
+                            </p>
+
+                            <!--Este es un carrucel que utiliza Bootstrap 5-->
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/images/slider-image-1.jpg" class="d-block w-100"
+                                            alt="Estruxtura de un drop de fibra con buffers y pelos">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/slider-image-2.jfif" class="d-block w-100"
+                                            alt="Representación de la fabricación de una fibra mediante extrusión">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/slider-image-3.jfif" class="d-block w-100"
+                                            alt="Transmisión de la luz por una fibra">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <a href="pages/quiz.html"><button class="quiz-button">Al cuestionario!</button></a>
+                    </li>
+                    <!-------------------LI END------------------->
+
+                    <!-------------------LI START------------------->
+                    <li class="navigation__item" tabindex="0">
+                        <b></b>
+                        <b></b>
+                        <a href="#">
+                            <span class="navigation__item--title">Tema del que trata el sexto desafío</span>
+                        </a>
+                        <div class="navigation__item__content">
+                            <span class="navigation__item__content--title">Título primario del item</span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate libero architecto
+                                esse nulla, asperiores deserunt ex veniam nobis eaque, nemo corporis sunt obcaecati aut
+                                dolorem quo ab at ad provident. Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Ut voluptatum aliquam iure incidunt veniam et eos culpa odio repellendus nulla
+                                dolores corrupti in tenetur, ipsum temporibus officia impedit, sit amet! Lorem ipsum,
+                                dolor sit amet consectetur adipisicing elit. Porro nesciunt eligendi iusto
+                                necessitatibus quae exercitationem
+                            </p>
+
+                            <span class="navigation__item__content--title">Título secundario del item</span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate libero architecto
+                                esse nulla, asperiores deserunt ex veniam nobis eaque, nemo corporis sunt obcaecati aut
+                                dolorem quo ab at ad provident. Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Ut voluptatum aliquam iure incidunt veniam et eos culpa odio repellendus nulla
+                                dolores corrupti in tenetur, ipsum temporibus officia impedit, sit amet! Lorem ipsum,
+                                dolor sit amet consectetur adipisicing elit. Porro nesciunt eligendi iusto
+                                necessitatibus quae exercitationem
+                            </p>
+
+                            <span class="navigation__item__content--title">Título terciario del item</span>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, esse maiores non,
+                                facilis aliquam ratione alias cupiditate qui ea voluptatibus quisquam eveniet sunt
+                                exercitationem dolores!
+                            </p>
+
+                            <!--Este es un carrucel que utiliza Bootstrap 5-->
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/images/slider-image-1.jpg" class="d-block w-100"
+                                            alt="Estruxtura de un drop de fibra con buffers y pelos">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/slider-image-2.jfif" class="d-block w-100"
+                                            alt="Representación de la fabricación de una fibra mediante extrusión">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/slider-image-3.jfif" class="d-block w-100"
+                                            alt="Transmisión de la luz por una fibra">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <a href="pages/quiz.html"><button class="quiz-button">Al cuestionario!</button></a>
+                    </li>
+                    <!-------------------LI END------------------->
+
+                    <!-------------------LI START------------------->
+                    <li class="navigation__item" tabindex="0">
+                        <b></b>
+                        <b></b>
+                        <a href="#">
+                            <span class="navigation__item--title">Tema del que trata el septimo desafío</span>
+                        </a>
+                        <div class="navigation__item__content">
+                            <span class="navigation__item__content--title">Título primario del item</span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate libero architecto
+                                esse nulla, asperiores deserunt ex veniam nobis eaque, nemo corporis sunt obcaecati aut
+                                dolorem quo ab at ad provident. Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Ut voluptatum aliquam iure incidunt veniam et eos culpa odio repellendus nulla
+                                dolores corrupti in tenetur, ipsum temporibus officia impedit, sit amet! Lorem ipsum,
+                                dolor sit amet consectetur adipisicing elit. Porro nesciunt eligendi iusto
+                                necessitatibus quae exercitationem
+                            </p>
+
+                            <span class="navigation__item__content--title">Título secundario del item</span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate libero architecto
+                                esse nulla, asperiores deserunt ex veniam nobis eaque, nemo corporis sunt obcaecati aut
+                                dolorem quo ab at ad provident. Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Ut voluptatum aliquam iure incidunt veniam et eos culpa odio repellendus nulla
+                                dolores corrupti in tenetur, ipsum temporibus officia impedit, sit amet! Lorem ipsum,
+                                dolor sit amet consectetur adipisicing elit. Porro nesciunt eligendi iusto
+                                necessitatibus quae exercitationem
+                            </p>
+
+                            <span class="navigation__item__content--title">Título terciario del item</span>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, esse maiores non,
+                                facilis aliquam ratione alias cupiditate qui ea voluptatibus quisquam eveniet sunt
+                                exercitationem dolores!
+                            </p>
+
+                            <!--Este es un carrucel que utiliza Bootstrap 5-->
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/images/slider-image-1.jpg" class="d-block w-100"
+                                            alt="Estruxtura de un drop de fibra con buffers y pelos">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/slider-image-2.jfif" class="d-block w-100"
+                                            alt="Representación de la fabricación de una fibra mediante extrusión">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/slider-image-3.jfif" class="d-block w-100"
+                                            alt="Transmisión de la luz por una fibra">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <a href="pages/quiz.html"><button class="quiz-button">Al cuestionario!</button></a>
+                    </li>
+                    <!-------------------LI END------------------->
+                </ul>
+            </div>
+        </aside>
+    </section>
+    <!-------------------INFO SECTION END------------------->
+
+    <script src="JS/info.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/bootstrap.min.js.map"></script>
+</body>
+
+</html>

@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primario: #fbbf65;
+  --color-secundario: #3a3a3a;
+  --color-terciario: #fff;
+}
+
+body {
+  background-image: url(../assets/images/main-bg.jpg);
+}
+
+.comments__button {
+  position: absolute;
+  right: 8.5%;
+  top: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  width: 160px;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+  background: linear-gradient(orange, darkorange);
+  box-shadow: 1px 1px 0 black;
+  border-radius: 30px;
+  border: 5px solid #fff;
+  cursor: pointer;
+}
+
+/* El código ubicado debajo establece que el mapa es una grid, la disposición de los botones y los colores de los mimos según su estado (ya jugado, por jugarse y bloqueado) */
+.main_map {
+  width: 1000px;
+  max-width: 90%;
+  height: 750px;
+  background-image: url(../assets/images/map-bg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-top: 150px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template: repeat(7, 1fr) / repeat(5, 1fr);
+  grid-template-areas:
+    ". . . . ."
+    "stage-1 . . stage-2 ."
+    ". stage-3 . . stage-4"
+    ". . stage-7 . ."
+    ". . . . stage-5"
+    ". . stage-6 . ."
+    ". . . . .";
+}
+
+#stage-1 {
+  grid-area: stage-1;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+#stage-2 {
+  grid-area: stage-2;
+}
+
+#stage-3 {
+  grid-area: stage-3;
+  margin-left: 10px;
+  margin-top: 80px;
+}
+
+#stage-4 {
+  grid-area: stage-4;
+}
+
+#stage-5 {
+  grid-area: stage-5;
+}
+
+#stage-6 {
+  grid-area: stage-6;
+}
+
+#stage-7 {
+  grid-area: stage-7;
+  margin-left: 100px;
+  margin-top: -30px;
+}
+
+.map_point {
+  text-align: center;
+  font-size: 1em;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px black, 2px 2px 1px black, 2px 3px 1px black;
+  cursor: pointer;
+  background-color: #ff2d2d;
+  color: white;
+}
+
+.map_point.played {
+  background-color: #fff;
+  color: black;
+}
+
+.map_point.toPlay {
+  background-color: rgb(216, 252, 59);
+  color: black;
+}
+
+/* El código ubicado debajo define el estilo que va a tener la sección de información una vez que se presiona alguno de los botones del mapa */
+
+.infoSection {
+  width: 930px;
+  max-width: 90%;
+  margin: 20px auto 50px;
+}
+
+.hide {
+  display: none;
+}
+
+.infoSection aside h2 {
+  color: var(--color-terciario);
+  font-size: 25px;
+  text-align: center;
+}
+
+.navigation {
+  width: 100%;
+  background-color: var(--color-terciario);
+  border-radius: 15px;
+  border-left: 2px solid #000000;
+  border-right: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+}
+
+.navigation ul {
+  text-decoration: none;
+  padding-left: 0;
+}
+
+.navigation__item {
+  text-decoration: none;
+  display: none;
+}
+
+.navigation__item a {
+  color: var(--color-secundario);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.navigation__item a span {
+  background: linear-gradient(orange, darkorange);
+  display: block;
+  line-height: 50px;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  font-size: 25px;
+  text-align: center;
+  cursor: pointer;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.navigation__item__content {
+  width: calc(100%-200px);
+}
+
+.navigation__item__content--title {
+  display: block;
+  line-height: 40px;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: var(--color-terciario);
+  border: none;
+  text-align: left;
+  margin-top: 20px;
+  padding-left: 45px;
+  width: 100%;
+}
+
+.navigation__item__content--title::after {
+  content: ":";
+}
+
+.navigation__item__content p {
+  width: 90%;
+  margin: 0 auto 20px;
+}
+
+#carouselExampleIndicators {
+  width: 260px;
+  height: 290px;
+  background-color: var(--color-terciario);
+  border-radius: 7%;
+  border: 1px solid var(--color-secundario);
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.carousel-item .w-100 {
+  /* w-100 son las imagenes que se muestran en el carrusel de Bootstrap*/
+  max-width: 260px;
+  max-height: 290px;
+  margin: 0 auto;
+}
+
+.navigation__item--active {
+  display: initial;
+}
+
+.navigation__item:first-of-type span {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.navigation__item:last-of-type span {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.quiz-button {
+  margin-left: 78%;
+  width: 160px;
+  height: 48px;
+  font-weight: bold;
+  background: linear-gradient(orange, darkorange);
+  box-shadow: 1px 1px 0 black;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1100px) {
+  .main_map {
+    width: 700px;
+    height: 500px;
+    margin-top: 150px;
+  }
+
+  .infoSection {
+    width: 650px;
+  }
+
+  .quiz-button {
+    margin-left: 70%;
+  }
+}
+
+@media (max-width: 780px) {
+  .main_map {
+    background: #1e1a33;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .map_point {
+    width: 450px;
+    max-width: 90%;
+    margin-top: 10px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px #ff9200, 2px 2px 1px #ff9200, 2px 3px 1px #ff9200;
+  }
+
+  .infoSection {
+    width: 450px;
+  }
+
+  .quiz-button {
+    margin-left: calc(50% - 80px);
+  }
+
+  #stage-1 {
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  #stage-3 {
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  #stage-7 {
+    margin: 0;
+    margin-top: 10px;
+  }
+}

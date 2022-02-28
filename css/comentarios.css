@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primario: #fbbf65;
+  --color-secundario: #3a3a3a;
+  --color-terciario: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px lightgray;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 10px;
+}
+
+body {
+  background-image: url(../assets/images/main-bg.jpg);
+  background-position: 50% 50%;
+}
+
+main {
+  width: 600px;
+  max-width: 90%;
+  height: 700px;
+  max-height: 70vh;
+  background-color: var(--color-terciario);
+  margin: 150px auto;
+  margin-top: 150px;
+  border: 1px solid var(--color-secundario);
+  overflow: hidden;
+  overflow-y: scroll;
+  border-radius: 30px;
+  padding: 50px 0 30px 0;
+}
+
+.main__header {
+  position: fixed;
+  width: 598px;
+  max-width: calc(90% - 2px);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  text-align: center;
+  margin-top: -50px;
+  padding: 10px 0;
+  border-bottom: 2px solid var(--color-secundario);
+  background: linear-gradient(orange, darkorange);
+  z-index: 1;
+}
+
+.toMapButton {
+  position: absolute;
+  right: 8.5%;
+  top: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  width: 160px;
+  line-height: 3rem;
+  font-size: 1.2rem;
+  background: linear-gradient(orange, darkorange);
+  box-shadow: 1px 1px 0 black;
+  border-radius: 30px;
+  border: 5px solid #fff;
+  cursor: pointer;
+}
+
+.comment__container {
+  width: 90%;
+  margin-top: 20px;
+  margin-left: 5%;
+  padding: 15px 10px;
+  border: 1px solid var(--color-secundario);
+  border-radius: 20px;
+  box-shadow: 2px 4px #3a3a3a;
+  background-color: powderblue;
+}
+
+.user {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.comment__number{
+    position: relative;
+    left: 380px;
+}

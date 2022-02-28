@@ -1,0 +1,67 @@
+body {
+  background-image: url(../assets/images/main-bg.jpg);
+}
+
+.cont {
+  width: 700px;
+  background: #1e1a33;
+  overflow: hidden;
+  margin-left: calc(50% - 350px);
+  margin-top: calc(50vh - 350px);
+}
+
+.cont .items {
+  float: left;
+  width: 33.333%;
+  margin-top: 5vh;
+  position: relative;
+  cursor: pointer;
+}
+.cont .items .hueco {
+  background: url(../assets/images/huecoTopo.png) no-repeat;
+  background-position: bottom center;
+  width: 100%;
+  height: 100px;
+  position: relative;
+  z-index: 10;
+}
+.cont .items .topo {
+  position: absolute;
+  left: 60px;
+  bottom: 20px;
+  width: 81px;
+  height: 0px;
+  background: url(../assets/images/topo.png) no-repeat;
+  background-position: top center;
+  transition: all 0.5s;
+}
+.cont .items.active .topo {
+  height: 69px;
+  padding-left: 60px;
+}
+
+p {
+  color: #fff;
+  font-size: 2rem;
+  position: relative;
+  text-align: center;
+  position: relative;
+  top: calc(50vh - 400px);
+}
+
+#alMapa{
+  display: none;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  width: 160px;
+  line-height: 3rem;
+  font-size: 1.2rem;
+  background: linear-gradient(orange, darkorange);
+  box-shadow: 1px 1px 0 black;
+  margin-left: calc(50% - 80px);
+  margin-top: 30px;
+  border-radius: 30px;
+  border: 5px solid #fff;
+  cursor: pointer;
+}
